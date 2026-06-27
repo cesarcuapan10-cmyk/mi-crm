@@ -1,0 +1,18 @@
+export const PLANTILLAS_BASE = [
+  { nombre: 'Primer contacto', etapa: 'NUEVO', tipo: 'apertura', contenido: 'Hola {nombre}, soy César de Entidad Vendedora. Vi tu interés y me encantaría platicar sobre cómo puedo ayudarte con {objecion}. ¿Tienes 10 minutos esta semana?' },
+  { nombre: 'Seguimiento sin respuesta', etapa: 'CONTACTADO', tipo: 'seguimiento', contenido: 'Hola {nombre}, te escribí hace unos días. Sé que el tiempo es valioso, por eso quiero ser breve: ¿te gustaría agendar una llamada corta?' },
+  { nombre: 'Invitación a cita', etapa: 'CONTACTADO', tipo: 'cita', contenido: 'Hola {nombre}, me encantaría conocer mejor tu situación. ¿Te parece si agendamos una sesión de diagnóstico de 45 min sin costo?' },
+  { nombre: 'Confirmación de cita', etapa: 'CITA_AGENDADA', tipo: 'confirmacion', contenido: 'Hola {nombre}, te confirmo nuestra cita. Estoy muy entusiasmado de platicar contigo. ¿Sigue en pie?' },
+  { nombre: 'Recordatorio de cita', etapa: 'CITA_AGENDADA', tipo: 'recordatorio', contenido: 'Hola {nombre}, te recuerdo que mañana tenemos nuestra sesión. Nos vemos pronto.' },
+  { nombre: 'Envío de propuesta', etapa: 'PROPUESTA_ENVIADA', tipo: 'propuesta', contenido: 'Hola {nombre}, te comparto la propuesta que preparé especialmente para {empresa}. Cualquier duda con gusto la resolvemos.' },
+  { nombre: 'Seguimiento a propuesta', etapa: 'PROPUESTA_ENVIADA', tipo: 'seguimiento', contenido: 'Hola {nombre}, ¿tuviste oportunidad de revisar la propuesta? Me encantaría saber qué piensas.' },
+  { nombre: 'Objeción: precio', etapa: 'PROPUESTA_ENVIADA', tipo: 'objecion', contenido: 'Entiendo {nombre}, la inversión es importante. Veámoslo así: el retorno que buscas con {objecion} justifica con creces el costo. ¿Te muestro cómo?' },
+  { nombre: 'Objeción: no es el momento', etapa: 'PROPUESTA_ENVIADA', tipo: 'objecion', contenido: 'Te comprendo {nombre}. Muchas veces el mejor momento es justo cuando sentimos que no lo es. ¿Qué tendría que pasar para que sí lo fuera?' },
+  { nombre: 'Objeción: falta de tiempo', etapa: 'PROPUESTA_ENVIADA', tipo: 'objecion', contenido: 'Precisamente {nombre}, este proceso está diseñado para ahorrarte tiempo a mediano plazo. ¿Te muestro cómo funcionaría en tu caso?' },
+  { nombre: 'Cierre suave', etapa: 'PROPUESTA_ENVIADA', tipo: 'cierre', contenido: 'Hola {nombre}, ya tenemos todo listo para comenzar. ¿Iniciamos esta semana o prefieres la próxima?' },
+  { nombre: 'Cierre con urgencia', etapa: 'PROPUESTA_ENVIADA', tipo: 'cierre', contenido: 'Hola {nombre}, tengo un par de espacios disponibles este mes. Si decides ahora, te reservo tu lugar. ¿Avanzamos?' },
+  { nombre: 'Agradecimiento por compra', etapa: 'GANADO', tipo: 'gracias', contenido: '¡Gracias por tu confianza {nombre}! Vamos a lograr grandes resultados juntos. Te contacto pronto con los siguientes pasos.' },
+  { nombre: 'Reactivación de cliente frío', etapa: 'CONTACTADO', tipo: 'reactivacion', contenido: 'Hola {nombre}, hace tiempo que no platicamos. Tengo algo que creo te puede interesar mucho. ¿Te cuento?' },
+  { nombre: 'Pedir referido', etapa: 'GANADO', tipo: 'referido', contenido: 'Hola {nombre}, me dio mucho gusto trabajar contigo. ¿Conoces a alguien más que pueda beneficiarse de esto? Te lo agradecería mucho.' },
+  { nombre: 'Recordatorio de pago', etapa: 'GANADO', tipo: 'pago', contenido: 'Hola {nombre}, te recuerdo amablemente el pago pendiente por {valor}. Cualquier facilidad la vemos con gusto.' },
+]
